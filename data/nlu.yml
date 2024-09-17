@@ -1,0 +1,90 @@
+version: "3.1"
+nlu:
+  - intent: greet
+    examples: |
+      - bonjour
+      - salut
+      - bonsoir
+      - hey
+      - coucou
+
+  - intent: goodbye
+    examples: |
+      - au revoir
+      - à bientôt
+      - bye
+      - salut
+      - à plus
+
+  - intent: affirm
+    examples: |
+      - oui
+      - bien sûr
+      - exactement
+      - c'est ça
+      - d'accord
+
+  - intent: deny
+    examples: |
+      - non
+      - pas du tout
+      - je ne pense pas
+      - absolument pas
+
+  - intent: mood_great
+    examples: |
+      - Je me sens super bien
+      - Je vais bien
+      - Je suis heureux
+      - Je suis content
+
+  - intent: mood_unhappy
+    examples: |
+      - Je me sens mal
+      - Je suis triste
+      - Je suis frustré
+      - Je suis fatigué
+
+  - intent: bot_challenge
+    examples: |
+      - Es-tu un bot ?
+      - Es-tu réel ?
+      - Qui es-tu ?
+      - Que fais-tu ?
+
+  - intent: ask_weather
+    examples: |
+      - Quel temps fait-il aujourd'hui ?
+      - Quelle est la météo ?
+      - Est-ce qu'il va pleuvoir ?
+      - Il fait beau dehors ?
+      - Comment est la météo ?
+
+  - intent: request_hotel
+    examples: |
+      - Je veux réserver un hôtel
+      - Je cherche un hôtel
+      - Puis-je réserver un hôtel ?
+
+  - intent: request_hotel
+    examples: |
+      - Je veux réserver un hôtel
+      - Je cherche un hôtel
+
+  - intent: inform_date
+    examples: |
+      - pour le [12 janvier](date)
+      - je veux réserver pour le [12 janvier](date)
+      - le [12 janvier](date)
+      - [12 janvier](date)
+      - pour le [20 mars](date)
+      - je veux réserver pour le [5 mai](date)
+      - le [25 décembre](date)
+      - [10 avril](date)
+      - je veux réserver pour [demain](date)
+      - je veux réserver pour [samedi](date)
+
+  - intent: inform_city
+    examples: |
+      - Je veux réserver à [Paris](city)
+      - Je cherche un hôtel à [Lyon](city)

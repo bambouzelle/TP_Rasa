@@ -1,0 +1,48 @@
+version: "3.1"
+stories:
+  - story: dire bonjour
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: dire au revoir
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: affirmation
+    steps:
+      - intent: affirm
+      - action: utter_affirm
+
+  - story: humeur heureuse
+    steps:
+      - intent: mood_great
+      - action: utter_mood_great
+
+  - story: humeur triste
+    steps:
+      - intent: mood_unhappy
+      - action: utter_mood_unhappy
+
+  - story: demander la météo
+    steps:
+      - intent: ask_weather
+      - action: utter_weather
+      
+  - story: réserver un hôtel
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_hotel
+      - action: utter_ask_date
+      - intent: inform_date
+        entities:
+          - date: "12 janvier"
+      - action: utter_ask_city
+      - intent: inform_city
+        entities:
+          - city: "Saint Malo"
+      - action: action_confirm_booking
+      - intent: affirm
+      - action: utter_goodbye
